@@ -77,3 +77,43 @@
     width: 12.5%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .order-table {
+    .order-table-header {
+      top: 178px;
+      font-size: 12px;
+      padding: 10px 5px;
+    }
+    .order-table-body {
+      padding: 0 5px;
+    }
+    .order-table-row {
+      font-size: 12px;
+      .status-cell {
+        padding: 4px 5px;
+        font-size: 10px;
+      }
+      .supplier-cell {
+        flex-wrap: wrap;
+        .market-label {
+          font-size: 11px;
+          margin-left: 3px;
+        }
+        .first-label {
+          font-size: 11px;
+          margin-left: 3px;
+        }
+      }
+    }
+    .delivery {
+      width: 19.5%;
+    }
+    .supplier {
+      width: 40.5%;
+    }
+    .total {
+      width: 17.5%;
+    }
+  }
+}

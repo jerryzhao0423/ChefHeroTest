@@ -21,3 +21,9 @@ body {
   padding: 0 40px;
   margin: auto;
 }
+
+@media screen and (max-width: 767px) {
+  .app-container {
+    padding: 0 15px;
+  }
+}

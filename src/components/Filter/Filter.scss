@@ -84,3 +84,25 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .filter {
+    padding: 15px 0;
+    .select-box {
+      .select-box-selected {
+        width: calc(100% - 132px);
+        padding: 10px 10px;
+      }
+      .select-box-reset {
+        padding: 10px 10px;
+        margin-left: 10px;
+      }
+      .select-box-options {
+        width: calc(100% - 132px);
+        .select-box-option {
+          padding: 10px 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import '../../variables';
+
+.order-table {
+  position: relative;
+  .order-table-header {
+    position: sticky;
+    top: 208px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1;
+    margin-bottom: 4px;
+    background-color: $white;
+    color: $darkGreen;
+  }
+  .order-table-body {
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .order-table-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f6fafa;
+    color: $darkGreen;
+    .status-cell {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      &.paid {
+        background-color: $paidLabel;
+      }
+      &.delivered {
+        background-color: $deliveredLabel;
+      }
+    }
+    .supplier-cell {
+      display: flex;
+      align-items: center;
+      .market-label {
+        padding: 4px;
+        background-color: $marketLabel;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+      .first-label {
+        padding: 5px 10px;
+        border-radius: 15px;
+        background-color: $fistLabel;
+        line-height: 1;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+  .status {
+    width: 22.5%;
+  }
+  .delivery {
+    width: 22.5%;
+  }
+  .supplier {
+    width: 42.5%;
+  }
+  .total {
+    width: 12.5%;
+  }
+}

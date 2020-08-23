@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.app-header {
+  position: sticky;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $bgColor;
+  z-index: 3;
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .app-logo {
+      width: 160px;
+    }
+  }
+}
